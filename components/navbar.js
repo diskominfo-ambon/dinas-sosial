@@ -138,6 +138,7 @@ export default function Navbar() {
                 Beranda
               </Link>
             </NavbarItem>
+            
             <NavbarItem
               active={/mengenal-kami/.test(router.pathname)}
             >
@@ -146,6 +147,20 @@ export default function Navbar() {
                 menus={[
                   { to: '/mengenal-kami/tentang', text: 'Tentang Kami'},
                   { to: '/mengenal-kami/tugas', text: 'Tugas dan Fungsi'},
+                ]}
+              />
+            </NavbarItem>
+
+            <NavbarItem
+              active={/perencanaan/.test(router.pathname)}
+            >
+              <LinkDropdown
+                text="Perencanaan"
+                menus={[
+                  { to: '/perencanaani/rencana-strategi', text: 'Rencana Strategis'},
+                  { to: '/perencanaan/rencana-kerja', text: 'Rencana Kerja'},
+                  { to: '/perencanaan/lakip', text: 'LAKIP'},
+          
                 ]}
               />
             </NavbarItem>
