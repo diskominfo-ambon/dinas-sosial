@@ -91,7 +91,7 @@ export default function Footer() {
           <FooterBrand>
             <List>
               <ListItem><BrandImage width="35" height="35" src="/static/img/logo-sosial.png" alt="kominfo" layout="fixed"/></ListItem>
-              <ListItem><Paragraph>Jl. Sultan Hairun No. 1 Gd. C Lt. 4 kantor Balai kota Ambon</Paragraph></ListItem>
+              <ListItem><Paragraph>Jl. Ina Tuni Raya Kelurahan Amantelu Kecematan Sirimau Kota Ambon</Paragraph></ListItem>
             </List>
           </FooterBrand>
           <FooterSupported>
