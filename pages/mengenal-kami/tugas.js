@@ -9,7 +9,8 @@ const Heading = styled.h2`
 const Paragraph = styled.p`
   font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 30px;
-  margin: 0;
+  margin: .9rem 0;
+  text-align: justify;
 `;
 const List = styled.ul`
   list-style: numeric;
@@ -22,23 +23,28 @@ const ListItem = styled.li`
 export default function Tugas() {
   return (
     <Layout breadcrumb="Tugas dan fungsi">
+      <Heading>
+        TUGAS, FUNGSI DAN STRUKTUR ORGANISASI DINAS
+      </Heading>
       <Paragraph>
-        Dinas Komunikasi, Informatika &  Persandian Kota Ambon  erbentuk  berdasarkan Peraturan Walikota (PERWALI) Kota Ambon Nomor 38 Tahun 2016, tentang Organisasi dan Tata Kerja Dinas Kota Ambon
+      Dinas Sosial Kota Ambon dibentuk berdasarkan Peraturan Daerah Kota AmbonNomor 4 Tahun 2016. Secara struktur organisasi dipimpin seorang Kepala Dinas yangberada di bawah dan bertanggung jawab kepada Walikota melalui Sekretaris Daerah.
+      </Paragraph>
+      <Paragraph>
+      Sebagai organsisasi daerah yang diberi hak otonom, dalam membantu Walikotaterhadap tugas penyelenggaraan pemerintah, pelaksanaan pembangunan, pembinaan danpemberdayaan masyarakat, maka Dinas Sosial Kota Ambon mempunyai tugas, yakni
+      melaksanakan penyusunan dan pelaksanaan kebijakan di bidang sosial dalam rangkapelaksanaan tugas desentralisasi, tugas pembantuan dan tugas-tugas lain yang diberikanoleh Walikota. Dan untuk menyelenggarakan tugas tersebut di atas, maka Dinas Sosial
+      mempunyai fungsi, yakni.
       </Paragraph>
       <Heading>
         Tugas
       </Heading>
       <Paragraph>Membantu Walikota melaksanakan penyusunan dan pelaksanaan  kebijakan di  bidang  komunikasi informatika dan persandian.</Paragraph>
 
-      <Heading>
-        Fungsi
-      </Heading>
       <List>
-        <ListItem>Perumusan  kebijakan  teknis  urusan  pemerintahan  di  bidang  komunikasi  informatika dan persandian</ListItem>
-        <ListItem>Pelaksanaan kebijakan di bidang komunikasi informatika dan persandian</ListItem>
-        <ListItem>Pelaksanaan evaluasi dan pelaporan di bidang komunikasi informatika dan persandian</ListItem>
-        <ListItem>Pelaksanaan administrasi dinas</ListItem>
-        <ListItem>Pelaksanaan fungsi lain yang diberikan oleh Walikota terkait dengan tugas dan fungsinya</ListItem>
+        <ListItem>Perumusan Kebijakan Teknis Urusan Pemerintaan di Bidang Sosial</ListItem>
+        <ListItem>Pelaksanaan Kebijakan di Bidang Sosial</ListItem>
+        <ListItem>Pelaksanaan Evaluasi dan Pelaporan di Bidang Sosial</ListItem>
+        <ListItem>Pelaksanaan Administrasi Dinas</ListItem>
+        <ListItem>Pelaksanaan Fungsi Lain yang diberikan Walikota terkait Tugas dan Fungsinya</ListItem>
       </List>
     </Layout>
   );

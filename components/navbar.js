@@ -92,7 +92,7 @@ const NavbarItem = styled.li`
     ${
       props => props.active && `
         color: white;
-        background-color: green;
+        background-color: red;
         // &::before {
         //   content: '';
         //   display: block;
@@ -131,25 +131,21 @@ export default function Navbar() {
     <Header>
       <ContainerFlexRow>
         <Content>
-          <NavbarBrand src="/static/img/logo-diskes.png" height={40} width={40} alt="logo kominfo"/>
+          <NavbarBrand src="/static/img/logo-sosial.png" height={40} width={40} alt="logo kominfo"/>
           <NavbarCollapse>
             <NavbarItem active={router.pathname === '/'}>
               <Link href="/" passHref>
                 Beranda
               </Link>
             </NavbarItem>
-            <NavbarItem  active={router.pathname === '/pengumuman'}>
-              <Link href="https://dinkes.malukuprov.go.id/page=covid19" passHref>#Info Covid</Link>
-            </NavbarItem>
             <NavbarItem
-              active={/profil/.test(router.pathname)}
+              active={/mengenal-kami/.test(router.pathname)}
             >
               <LinkDropdown
-                text="Profil"
+                text="Mengenal kami"
                 menus={[
-                  { to: '/profil/tentang-kami', text: 'Tentang Kami'},
-                  { to: '/profil/sasaran', text: 'Sasaran'},
-                  { to: '/profil/pegawai', text: 'Profil Pegawai'},
+                  { to: '/mengenal-kami/tentang', text: 'Tentang Kami'},
+                  { to: '/mengenal-kami/tugas', text: 'Tugas dan Fungsi'},
                 ]}
               />
             </NavbarItem>
@@ -158,13 +154,18 @@ export default function Navbar() {
               <LinkDropdown
                 text="Pelayanan"
                 menus={[
-                  { to: '/pelayanan/maklumat-pelayanan', text: 'Maklumat Pelayanan' },
-                  { to: '/pelayanan/daftar-pelayanan', text: 'Daftar Pelayanan' }
+                  { to: 'https://ambon.go.id/wp-content/uploads/2022/07/PRODUK-LAYANAN-DINAS-SOSIAL.xlsx', text: 'PRODUK LAYANAN DINAS SOSIAL' },
+                  { to: 'https://ambon.go.id/wp-content/uploads/2021/06/SOP-SELEKSI-YAYASAN.pdf', text: 'SOP SELEKSI YAYASAN' },
+                  { to: 'https://ambon.go.id/wp-content/uploads/2021/06/SOP-SELEKSI-PUTUS-SEKOLAH.pdf', text: 'SOP SELEKSI PUTUS SEKOLAH' },
+                  { to: 'https://ambon.go.id/wp-content/uploads/2021/06/SOP-PUB.pdf', text: 'SOP PUB' },
+                  { to: 'https://ambon.go.id/wp-content/uploads/2021/06/SOP-PENGANGKATAN-ANAK.pdf', text: 'SOP PENGANGKATAN ANAK' },
+                  { to: 'https://ambon.go.id/wp-content/uploads/2021/06/SOP-BPJS.pdf', text: 'SOP BPJS' },
+                  { to: 'https://ambon.go.id/wp-content/uploads/2021/06/ALUR-PENGADUAN.pdf', text: 'ALUR PENGADUAN' },
                 ]}
               />
             </NavbarItem>
             <NavbarItem  active={router.pathname === '/berita'}>
-              <Link href="/berita" passHref>Kegiatan dan Berita</Link>
+              <Link href="/informasi/kegiatan" passHref>Kegiatan dan Berita</Link>
             </NavbarItem>
           </NavbarCollapse>
         </Content>

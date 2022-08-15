@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const LinearGradient = styled.div`
   padding: 4rem 2rem;
-  background: linear-gradient(180deg, #4caf50 250px, white);
+  background: linear-gradient(180deg, #bb1919 250px, white);
 `;
 
 const Content = styled.div`

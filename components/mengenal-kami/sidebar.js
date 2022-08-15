@@ -78,9 +78,6 @@ export default function Sidebar() {
         <SidebarItem active={/tugas/.test(router.pathname)}>
           <Link href="/mengenal-kami/tugas" passHref>Tugas dan fungsi</Link>
         </SidebarItem>
-        <SidebarItem active={/command-center/.test(router.pathname)}>
-          <Link href="/mengenal-kami/command-center" passHref>Command Center</Link>
-        </SidebarItem>
       </SidebarContent>
     </SidebarCollapse>
   );

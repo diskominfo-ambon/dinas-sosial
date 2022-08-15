@@ -104,7 +104,7 @@ const BlockqouteItem = styled.div`
 `;
 
 const HeadlineWelcome = styled.div`
-  background-color: #4caf50;
+  background-color: #bb1919;
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -137,10 +137,10 @@ const HeadlineLink = styled.a`
 
   &:hover {
     background-color: white;
-    color: #4caf50;
+    color: #bb1919;
 
     svg > path {
-      color: #4caf50;
+      color: #bb1919;
     }
   }
   > svg {
@@ -388,8 +388,8 @@ export default function Home(props) {
         </Container>
         <FlexCenter>
           <Container>
-              <Headline>Ambon Sehat, Ambon Sejahtera</Headline>
-              <SubHeadline>Selamat Datang di Website Resmi Dinas Kesehatan kota Ambon. Mari Katong Lawan Covid-19 Sama-sama! #dirumahaja</SubHeadline>
+              <Headline>Terwujudnya Partisipatif Menuju Masyarakat Sentosa </Headline>
+              <SubHeadline>Selamat Datang di Website Resmi Dinas Sosial Kota Ambon</SubHeadline>
               <center>
                 <HeadlineLink passHref href="/profil/tentang-kami">
                   Mulai kenalan dulu
@@ -420,7 +420,7 @@ export default function Home(props) {
             Drs. BODEWIN M. WATTIMENA, M.Si - PEJABAT WALIKOTA AMBON
           </Blockqoute.Caption>
         </BlockqouteItem>
-        <BlockqouteItem className="blockqoute__policies">
+        {/* <BlockqouteItem className="blockqoute__policies">
           <Blockqoute.Heading>
             Makmulat Pelayanan
           </Blockqoute.Heading>
@@ -432,7 +432,7 @@ export default function Home(props) {
           <Blockqoute.Caption>
             Drs. J. R. ADRIAANSZ, M.Si - KEPALA DINAS KOMUNIKASI INFORMATIKA & PERSANDIAN KOTA AMBON
           </Blockqoute.Caption>
-        </BlockqouteItem>
+        </BlockqouteItem> */}
       </Blockqoute>
 
 
@@ -449,7 +449,7 @@ export default function Home(props) {
       <br/>
       <br/>
 
-      <NewsInfographic/>
+      {/* <NewsInfographic/> */}
 
 
       {/* Kegiatan & Pengumuman terbaru */}
@@ -475,7 +475,7 @@ export default function Home(props) {
             </SectionContent>
             <SectionContent>
               <SectionTitle>Pengumuman</SectionTitle>
-              <AnnouncementContent>
+              {/* <AnnouncementContent>
                 {props.announcements?.data?.map(data =>
                   <AnnouncementItem key={data.id}>
                     <AnnouncementLink passHref href="halo">
@@ -486,7 +486,7 @@ export default function Home(props) {
                     </AnnouncementLink>
                   </AnnouncementItem>
                 )}
-              </AnnouncementContent>
+              </AnnouncementContent> */}
             </SectionContent>
           </SectionFlex>
         </Container>
