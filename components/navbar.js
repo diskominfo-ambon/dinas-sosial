@@ -147,6 +147,7 @@ export default function Navbar() {
                 menus={[
                   { to: '/mengenal-kami/tentang', text: 'Tentang Kami'},
                   { to: '/mengenal-kami/tugas', text: 'Tugas dan Fungsi'},
+                  { to: '/mengenal-kami/pegawai', text: 'Pegawai'},
                 ]}
               />
             </NavbarItem>
